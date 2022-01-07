@@ -279,18 +279,31 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-second-color);
+  margin-bottom: 16px;
 }
 .team-content {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+.team-social-list {
+  display: flex;
+  justify-content: center;
+}
+.team-social-item + .team-social-item {
+  margin-left: 10px;
+}
+
 .team-social-link {
   width: 44px;
   height: 44px;
-  background-color: #ffffff;
-  display: block;
+  background-color: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
 }
+
 /* ----------ПОДВАЛ ГЛАВНОЙ СТРАНИЦЫ---------- */
 .footer {
   background: var(--text-first-color);
