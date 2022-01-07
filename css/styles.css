@@ -284,6 +284,13 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.team-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  display: block;
+  border-radius: 50%;
+}
 /* ----------ПОДВАЛ ГЛАВНОЙ СТРАНИЦЫ---------- */
 .footer {
   background: var(--text-first-color);
