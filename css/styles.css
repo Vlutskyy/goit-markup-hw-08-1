@@ -4,6 +4,7 @@
   --text-third-color: #2196f3;
   --text-fourth-color: #2f303a;
   --text-fifth-color: #ffffff;
+  --team-background-color: #f5f4fa;
 }
 
 body {
@@ -62,7 +63,7 @@ img {
 /* -----------Header------------------ */
 .header {
   border-bottom: 1px solid #ececec;
-  background: #ffffff;
+  background: var(--text-fifth-color);
 }
 .logo {
   font-family: 'Raleway', 'sans-serif';
@@ -239,7 +240,7 @@ img {
 }
 /* ----------НАША КОМАНДА--------- */
 .team {
-  background: #f5f4fa;
+  background: var(--team-background-color);
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -297,13 +298,21 @@ img {
 .team-social-link {
   width: 44px;
   height: 44px;
-  background-color: teal;
+  background-color: var(--team-background-color);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  color: #afb1b8;
 }
-
+.team-social-icon {
+  fill: currentColor;
+}
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--text-third-color);
+  color: var(--text-fifth-color);
+}
 /* ----------ПОДВАЛ ГЛАВНОЙ СТРАНИЦЫ---------- */
 .footer {
   background: var(--text-first-color);
