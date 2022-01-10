@@ -133,7 +133,6 @@ img {
 
 .header-social-icon {
   margin-right: 10px;
-  /* display: flex; */
   align-items: center;
   fill: currentColor;
 }
@@ -195,18 +194,18 @@ img {
 
 /*----------НАШИ ПРЕИМУЩЕСТВА--------  */
 
-.content {
+.feature {
   padding-top: 94px;
   padding-bottom: 47px;
 }
-.content-list {
+.feature-list {
   display: flex;
   justify-content: center;
 }
-.content-item:not(:last-child) {
+.feature-item:not(:last-child) {
   margin-right: 30px;
 }
-.content-after-title {
+.feature-after-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -215,33 +214,37 @@ img {
   color: var(--text-first-color);
   margin-bottom: 10px;
 }
-.content-text {
+.feature-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-second-color);
 }
-.content-item {
+.feature-item {
   width: calc((100% - 90px) / 4);
 }
-
-/* -----------ЧЕМ МЫ ЗАНИМАЕМСЯ------- */
-.image-list {
+.rectangle-group {
   display: flex;
   justify-content: center;
 }
-.image-title {
+
+/* -----------ЧЕМ МЫ ЗАНИМАЕМСЯ------- */
+.box-list {
+  display: flex;
+  justify-content: center;
+}
+.box-title {
   margin-bottom: 50px;
 }
-.image {
+.box {
   padding-top: 47px;
   padding-bottom: 94px;
 }
-.image-item:not(:last-child) {
+.box-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.image-title {
+.box-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
