@@ -130,6 +130,18 @@ img {
 .header-tel:focus {
   color: var(--text-third-color);
 }
+
+.header-social-icon {
+  margin-right: 10px;
+  /* display: flex; */
+  align-items: center;
+  fill: currentColor;
+}
+
+.header-social-icon:focus,
+.header-social-icon:hover {
+  color: var(--text-third-color);
+}
 /* ===========Герой============== */
 
 .block {
@@ -319,7 +331,10 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.footer-container {
+  /* display: flex;
+  align-items: baseline; */
+}
 .footer-logo {
   font-family: 'Raleway', 'sans-serif';
   font-weight: 700;
@@ -374,6 +389,46 @@ img {
 .footer-mailto:focus,
 .footer-tel:focus {
   color: #d7e4f0;
+}
+
+/* ==========footer-right=========== */
+
+.footer-right {
+}
+.footer-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  /* justify-content: center; */
+}
+.footer-social-list {
+  display: flex;
+  /* justify-content: center; */
+}
+.footer-social-item + .footer-social-item {
+  margin-left: 10px;
+}
+.footer-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--text-fourth-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #ffffff;
+}
+.footer-social-icon {
+  fill: currentColor;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--text-third-color);
+  color: var(--text-fifth-color);
 }
 /* =======ПОРТФОЛИО=========== */
 
