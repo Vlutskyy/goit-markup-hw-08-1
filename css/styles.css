@@ -223,12 +223,41 @@ img {
 .feature-item {
   width: calc((100% - 90px) / 4);
 }
+.feature-list {
+  display: flex;
+  justify-content: center;
+}
+.feature-item {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.group-list {
+  display: flex;
+  justify-content: center;
+}
 .rectangle-group {
   display: flex;
   justify-content: center;
 }
+.group-item {
+  height: 120px;
+  width: 270px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.group-item:not(:last-child) {
+  margin-right: 30px;
+}
+.group-icon {
+  display: flex;
+  justify-content: center;
+  /* margin: auto; */
 
-/* -----------ЧЕМ МЫ ЗАНИМАЕМСЯ------- */
+  align-items: center;
+}
+
+/* ===========ЧЕМ МЫ ЗАНИМАЕМСЯ============ */
+
 .box-list {
   display: flex;
   justify-content: center;
