@@ -244,16 +244,12 @@ img {
   width: 270px;
   background: #f5f4fa;
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .group-item:not(:last-child) {
   margin-right: 30px;
-}
-.group-icon {
-  display: flex;
-  justify-content: center;
-  /* margin: auto; */
-
-  align-items: center;
 }
 
 /* ===========ЧЕМ МЫ ЗАНИМАЕМСЯ============ */
