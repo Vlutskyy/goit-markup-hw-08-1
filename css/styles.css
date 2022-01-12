@@ -247,6 +247,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* margin: 0 auto; */
 }
 .group-item:not(:last-child) {
   margin-right: 30px;
@@ -348,21 +349,64 @@ img {
 .team-social-icon {
   fill: currentColor;
 }
+
 .team-social-link:hover,
 .team-social-link:focus {
   background-color: var(--text-third-color);
   color: var(--text-fifth-color);
 }
+/* ==============ПОСТОЯННЫЕ КЛИЕНТЫ============ */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-link {
+  height: 92px;
+  width: 170px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--text-third-color);
+}
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--text-third-color);
+}
+.clients-icon {
+  fill: #afb1b8;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 /* ----------ПОДВАЛ ГЛАВНОЙ СТРАНИЦЫ---------- */
 .footer {
-  background: var(--text-first-color);
+  background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 .footer-container {
-  /* display: flex;
-  align-items: baseline; */
+  /* box-sizing: content-box (border-box); */
+  display: flex;
+  align-items: baseline;
 }
+/* ============ footer-left ============== */
+
 .footer-logo {
   font-family: 'Raleway', 'sans-serif';
   font-weight: 700;
@@ -407,7 +451,9 @@ img {
 }
 .footer-list {
   font-style: normal;
+  margin-right: 70px;
 }
+
 .footer-link:hover,
 .footer-link:focus {
   color: var(--text-third-color);
@@ -431,6 +477,7 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   display: flex;
+  margin-bottom: 20px;
   /* justify-content: center; */
 }
 .footer-social-list {
@@ -443,7 +490,7 @@ img {
 .footer-social-link {
   width: 44px;
   height: 44px;
-  background-color: var(--text-fourth-color);
+  background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
