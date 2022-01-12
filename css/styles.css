@@ -101,33 +101,25 @@ img {
 .current {
   color: #2196f3;
 }
-.header-mailto {
+.header-contact-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-second-color);
 }
-.header-tel {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--text-second-color);
-}
+
 .header-contact {
   margin-left: auto;
   display: flex;
 }
-.connection:not(:last-child) {
+.header-contact-item:not(:last-child) {
   margin-right: 50px;
 }
 .header-link:hover,
 .header-link:focus,
-.header-mailto:hover,
-.header-tel:hover,
-.header-mailto:focus,
-.header-tel:focus {
+.header-contact-link:hover,
+.header-contact-link:focus {
   color: var(--text-third-color);
 }
 
@@ -143,7 +135,7 @@ img {
 }
 /* ===========Герой============== */
 
-.block {
+.hero {
   text-align: center;
   background: var(--text-fourth-color);
   padding-top: 200px;
@@ -159,7 +151,7 @@ img {
   margin-right: auto;
 }
 
-.block-title {
+.hero-title {
   width: 696px;
   margin: 0 auto;
   font-weight: 900;
@@ -173,7 +165,7 @@ img {
   margin-bottom: 30px;
 }
 
-.block-btn {
+.hero-btn {
   cursor: pointer;
   font-weight: bold;
   font-size: 16px;
@@ -187,20 +179,19 @@ img {
   padding: 10px 32px;
 }
 
-.block-btn:hover,
-.block-btn:focus {
+.hero-btn:hover,
+.hero-btn:focus {
   background: #188ce8;
 }
 
 /*----------НАШИ ПРЕИМУЩЕСТВА--------  */
 
-.feature {
+.section {
   padding-top: 94px;
-  padding-bottom: 47px;
+  padding-bottom: 94px;
 }
 .feature-list {
   display: flex;
-  justify-content: center;
 }
 .feature-item:not(:last-child) {
   margin-right: 30px;
@@ -254,7 +245,9 @@ img {
 }
 
 /* ===========ЧЕМ МЫ ЗАНИМАЕМСЯ============ */
-
+.work-section {
+  padding-top: 0;
+}
 .box-list {
   display: flex;
   justify-content: center;
@@ -262,10 +255,7 @@ img {
 .box-title {
   margin-bottom: 50px;
 }
-.box {
-  padding-top: 47px;
-  padding-bottom: 94px;
-}
+
 .box-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -282,8 +272,6 @@ img {
 /* ----------НАША КОМАНДА--------- */
 .team {
   background: var(--team-background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .team-list {
   display: flex;
@@ -302,6 +290,7 @@ img {
   margin-right: 30px;
 }
 .team-item {
+  background-color: var(--text-fifth-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -508,10 +497,7 @@ img {
 /* =======ПОРТФОЛИО=========== */
 
 /* =========ПРОЕКТЫ========== */
-.projects {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .filter {
   display: flex;
   justify-content: center;
