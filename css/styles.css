@@ -213,24 +213,14 @@ img {
 }
 .feature-item {
   width: calc((100% - 90px) / 4);
+  margin-top: 25px;
 }
 .feature-list {
   display: flex;
   justify-content: center;
 }
-.feature-item {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
+
 .group {
-  display: flex;
-  justify-content: center;
-}
-.group-list {
-  display: flex;
-  justify-content: center;
-}
-.group-item {
   height: 120px;
   width: 270px;
   background: #f5f4fa;
@@ -238,10 +228,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin: 0 auto; */
-}
-.group-item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 /* ===========ЧЕМ МЫ ЗАНИМАЕМСЯ============ */
@@ -328,7 +315,7 @@ img {
 .team-social-link {
   width: 44px;
   height: 44px;
-  background-color: var(--team-background-color);
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -560,14 +547,18 @@ img {
   margin-left: 30px;
   margin-top: 30px;
   background-color: #ffffff;
+  /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16); */
 }
 .galery-content {
   padding: 20px 24px 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
-.galery-item:hover,
-.galery-item:focus {
+
+.galery-link:hover,
+.galery-link:focus {
+  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
