@@ -107,6 +107,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-second-color);
+  display: flex;
+  align-items: center;
 }
 
 .header-contact {
@@ -125,7 +127,7 @@ img {
 
 .header-social-icon {
   margin-right: 10px;
-  align-items: center;
+
   fill: currentColor;
 }
 
