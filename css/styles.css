@@ -222,11 +222,11 @@ img {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-.group-list {
+.group {
   display: flex;
   justify-content: center;
 }
-.rectangle-group {
+.group-list {
   display: flex;
   justify-content: center;
 }
