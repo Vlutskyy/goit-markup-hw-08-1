@@ -161,7 +161,6 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-fifth-color);
-  /* background: var(--text-fourth-color); */
   margin-bottom: 30px;
 }
 
