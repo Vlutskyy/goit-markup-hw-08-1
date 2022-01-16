@@ -104,6 +104,17 @@ img {
 }
 .current {
   color: #2196f3;
+  position: relative;
+}
+.current::after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  position: absolute;
+  background-color: var(--text-third-color);
+  left: 0;
+  bottom: -32px;
 }
 .header-contact-link {
   font-weight: 500;
