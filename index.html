@@ -141,13 +141,22 @@
           <h2 class="box-title">Чем мы занимаемся</h2>
           <ul class="list box-list">
             <li class="box-item">
-              <img src="./img/box1.jpg" alt="планшет" width="370" height="294" />
+              <div class="box-item-wrap">
+                <img src="./img/box1.jpg" alt="планшет" width="370" height="294" />
+                <p class="box-img-text">Десктопные приложения</p>
+              </div>
             </li>
             <li class="box-item">
-              <img src="./img/box2.jpg" alt="смартфон" width="370" height="294" />
+              <div class="box-item-wrap">
+                <img src="./img/box2.jpg" alt="смартфон" width="370" height="294" />
+                <p class="box-img-text">Мобильные приложения</p>
+              </div>
             </li>
             <li class="box-item">
-              <img src="./img/box3.jpg" alt="ручка в руке" width="370" height="294" />
+              <div class="box-item-wrap">
+                <img src="./img/box3.jpg" alt="ручка в руке" width="370" height="294" />
+                <p class="box-img-text">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -429,7 +438,11 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close" data-modal-close>x</button>
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-icon button" width="18" height="18">
+            <use href="./img/icons.svg#icon-close-black-18dp-1"></use>
+          </svg>
+        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>

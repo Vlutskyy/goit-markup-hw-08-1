@@ -26,6 +26,7 @@ ul {
 }
 button {
   cursor: pointer;
+  padding: 0;
 }
 img {
   display: block;
@@ -255,6 +256,7 @@ img {
 }
 
 /* ===========ЧЕМ МЫ ЗАНИМАЕМСЯ============ */
+
 .work-section {
   padding-top: 0;
 }
@@ -269,7 +271,33 @@ img {
 .box-item:not(:last-child) {
   margin-right: 30px;
 }
-
+.box-item-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.box-img-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 27px;
+  height: 70px;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.box-item-wrap:hover .box-img-text {
+  transform: translateY(0);
+}
 .box-title {
   font-weight: 700;
   font-size: 36px;
@@ -653,6 +681,9 @@ img {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 500ms;
 }
+/* .button {
+  padding: 0px;
+} */
 .modal-close {
   width: 30px;
   height: 30px;
