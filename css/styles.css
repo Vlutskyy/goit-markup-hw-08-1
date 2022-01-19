@@ -613,7 +613,14 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.galery-img-overley {
+  position: relative;
+  overflow: hidden;
+}
 .galery-img-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -624,16 +631,14 @@ img {
   color: #ffffff;
   padding: 63px 24px;
   height: 100%;
+  width: 100%;
   transform: translateY(100%);
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* overflow: auto; */
 }
-.galery-img-overley {
-  position: relative;
-  overflow: hidden;
-}
+
 .galery-link:hover .galery-img-text,
 .galery-link:focus .galery-img-text {
   transform: translateY(0);
