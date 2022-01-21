@@ -450,16 +450,30 @@
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form action="#">
+          <label class="input-text" for="user-name">Имя</label>
           <input
             type="text"
             class="form-input"
             name="user-name"
             placeholder="Имя"
+            id="user-name"
+          /><label class="input-text" for="user-tel">Телефон</label>
+          <input
+            type="tel"
+            class="form-input"
+            name="user-tel"
+            placeholder="Телефон"
             required
-            minlength="2"
+            id="user-tel"
           />
-          <input type="tel" class="form-input" name="user-tel" placeholder="Телефон" required />
-          <input type="email" class="form-input" name="user-email" placeholder="Почта" />
+          <label class="input-text" for="user-email">Почта</label
+          ><input
+            type="email"
+            class="form-input"
+            name="user-email"
+            placeholder="Почта"
+            id="user-email"
+          />
 
           <button type="submit">Отправить</button>
         </form>
