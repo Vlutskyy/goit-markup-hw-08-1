@@ -27,6 +27,7 @@ ul {
 button {
   cursor: pointer;
   padding: 0;
+  outline: none;
 }
 img {
   display: block;
@@ -185,7 +186,7 @@ img {
 }
 
 .hero-btn {
-  cursor: pointer;
+  position: absolute;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
@@ -530,6 +531,10 @@ img {
   background-color: var(--text-third-color);
   color: var(--text-fifth-color);
 }
+
+.footer-right-wrap {
+  display: flex;
+}
 /* =======ПОРТФОЛИО=========== */
 
 /* =========ПРОЕКТЫ========== */
@@ -714,6 +719,21 @@ img {
 }
 .form-field {
   margin-bottom: 10px;
+  /* font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+
+color: rgba(117, 117, 117, 0.5); */
+}
+.input-wrap {
+  position: relative;
+}
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 500ms;
 }
 .form-input {
   width: 100%;
@@ -721,8 +741,21 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  padding-left: 16px;
+  padding-left: 40px;
+  outline: none;
+  transition: border-color 500ms;
 }
+.form-input:focus {
+  border-color: #2196f3;
+}
+.form-input:focus + .input-icon {
+  fill: #2196f3;
+}
+/* .form-input::placeholder {
+  position: absolute;
+  color: #2196f3;
+  
+} */
 .input-text {
   display: block;
   font-weight: normal;
@@ -731,7 +764,9 @@ img {
   letter-spacing: 0.01em;
   color: #757575;
   margin-bottom: 4px;
+  outline: none;
 }
+
 .form-text {
   width: 100%;
   height: 120px;
@@ -740,4 +775,57 @@ img {
   border-radius: 4px;
   padding: 12px 16px;
   resize: none;
+  outline: none;
+}
+.form-text:focus {
+  border-color: #2196f3;
+}
+
+.check-text {
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  /* display: flex; */
+}
+/* .check-text::before {
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 2px solid #000000;
+  border-radius: 2px;
+} */
+.agree-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: #2196f3;
+  margin-left: 4px;
+}
+.modal-btn-submit {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: var(--text-third-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  border: none;
+  padding: 10px 32px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-btn-submit:hover,
+.modal-btn-submit:focus {
+  background-color: #188ce8;
 }
