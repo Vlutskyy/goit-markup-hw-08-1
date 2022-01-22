@@ -786,15 +786,24 @@ color: rgba(117, 117, 117, 0.5); */
   line-height: 1.71px;
   letter-spacing: 0.03em;
   color: #757575;
-  /* display: flex; */
+  display: flex;
 }
-/* .check-text::before {
+
+.check-text::before {
   content: '';
   width: 16px;
   height: 15px;
   border: 2px solid #000000;
   border-radius: 2px;
-} */
+}
+.agree-check:checked + .check-text::before {
+  border: none;
+  background-image: url(../img/icons.svg#icon-check);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .agree-link {
   font-size: 14px;
   line-height: 1.71;
