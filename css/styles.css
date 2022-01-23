@@ -186,15 +186,21 @@ img {
 }
 
 .hero-btn {
-  position: absolute;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: var(--text-fifth-color);
-  background: var(--text-third-color);
+  color: #ffffff;
+  background-color: var(--text-third-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
   border: none;
   padding: 10px 32px;
   transition-property: background-color;
@@ -685,9 +691,6 @@ img {
   transition: transform 500ms;
 }
 
-/* .button {
-  padding: 0px;
-} */
 .modal-close {
   width: 30px;
   height: 30px;
@@ -702,6 +705,20 @@ img {
   top: 8px;
   right: 8px;
 }
+.modal-icon {
+  fill: #000000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close:hover .modal-icon,
+.modal-close:focus .modal-icon {
+  fill: var(--text-third-color);
+}
+
 .is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -719,11 +736,6 @@ img {
 }
 .form-field {
   margin-bottom: 10px;
-  /* font-size: 12px;
-line-height: 14px;
-letter-spacing: 0.01em;
-
-color: rgba(117, 117, 117, 0.5); */
 }
 .input-wrap {
   position: relative;
@@ -787,18 +799,21 @@ color: rgba(117, 117, 117, 0.5); */
   letter-spacing: 0.03em;
   color: #757575;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .check-text::before {
   content: '';
-  width: 15px;
+  width: 16px;
   height: 15px;
   border: 2px solid #000000;
   border-radius: 2px;
+  margin-right: 7px;
 }
 .agree-check:checked + .check-text::before {
   border: none;
-  background-image: url(../img/icons.svg#icon-check);
+  background-image: url(../img/icon-check.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -810,7 +825,6 @@ color: rgba(117, 117, 117, 0.5); */
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: #2196f3;
-  margin-left: 4px;
 }
 .modal-btn-submit {
   display: block;
