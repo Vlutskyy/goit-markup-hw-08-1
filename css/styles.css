@@ -788,6 +788,7 @@ img {
   padding: 12px 16px;
   resize: none;
   outline: none;
+  transition: border-color 500ms;
 }
 .form-text:focus {
   border-color: #2196f3;
