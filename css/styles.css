@@ -539,7 +539,7 @@ img {
   background-color: var(--text-third-color);
   color: var(--text-fifth-color);
 }
-
+/* ==================== footer-right ================*/
 .footer-right-wrap {
   display: flex;
 }
@@ -584,6 +584,10 @@ img {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: #188ce8;
 }
 
 .footer-send-icon {
