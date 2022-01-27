@@ -190,7 +190,7 @@ img {
   align-items: center;
   justify-content: center;
   min-width: 200px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
@@ -288,7 +288,7 @@ img {
   bottom: 0;
   background: rgba(47, 48, 58, 0.8);
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -442,6 +442,7 @@ img {
 }
 /* ============ footer-left ============== */
 .footer-left {
+  flex-grow: 1;
   margin-right: 70px;
 }
 .footer-logo {
@@ -504,7 +505,7 @@ img {
   margin-right: 93px;
 }
 .footer-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -568,7 +569,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
@@ -701,7 +702,6 @@ img {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /* overflow: auto; */
 }
 
 .galery-link:hover .galery-img-text,
@@ -751,6 +751,7 @@ img {
   border-radius: 50%;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -778,7 +779,7 @@ img {
   visibility: hidden;
 }
 .modal-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
@@ -789,6 +790,9 @@ img {
 }
 .form-field {
   margin-bottom: 10px;
+}
+.form-field-comment {
+  margin-bottom: 20px;
 }
 .input-wrap {
   position: relative;
@@ -816,11 +820,7 @@ img {
 .form-input:focus + .input-icon {
   fill: #2196f3;
 }
-/* .form-input::placeholder {
-  position: absolute;
-  color: #2196f3;
-  
-} */
+
 .input-text {
   display: block;
   font-weight: normal;
@@ -844,11 +844,21 @@ img {
   outline: none;
   transition: border-color 500ms;
 }
+
+.form-text::placeholder {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
 .form-text:focus {
   border-color: #2196f3;
 }
 
 .check-text {
+  cursor: pointer;
   font-size: 14px;
   line-height: 1.71px;
   letter-spacing: 0.03em;
@@ -886,7 +896,7 @@ img {
   align-items: center;
   justify-content: center;
   min-width: 200px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
