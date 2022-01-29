@@ -1,0 +1,38 @@
+.hero-section {
+  text-align: center;
+  background: var(--text-four-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/Блок-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-title {
+  width: 696px;
+  margin: 0 auto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-five-color);
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  display: block;
+  min-width: 200px;
+  margin-top: 30px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--text-eight-color);
+}

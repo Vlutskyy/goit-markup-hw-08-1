@@ -1,1 +1,453 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@charset "UTF-8";
+:root {
+  --text-one-color: #212121;
+  --text-two-color: #757575;
+  --text-three-color: #2196f3;
+  --text-four-color: #2f303a;
+  --text-five-color: #ffffff;
+  --text-six-color: #000000;
+  --text-seven-color: #ececec;
+  --text-eight-color: #188ce8;
+  --text-nine-color: #afb1b8;
+  --team-background-color: #f5f4fa;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Roboto', 'sans-serif';
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.header {
+  border-bottom: 1px solid var(--text-seven-color);
+  background: var(--text-five-color);
+}
+
+.logo {
+  font-family: 'Raleway', 'sans-serif';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--text-three-color);
+  margin-right: 93px;
+}
+
+.logo-dark {
+  color: var(--text-six-color);
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-one-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-container {
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  display: flex;
+}
+
+.current {
+  color: var(--text-three-color);
+  position: relative;
+}
+
+.current::after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  position: absolute;
+  background-color: var(--text-three-color);
+  left: 0;
+  bottom: -34px;
+}
+
+.header-contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-two-color);
+  display: flex;
+  align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contact {
+  margin-left: auto;
+  display: flex;
+}
+
+.header-contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: var(--text-three-color);
+}
+
+.header-social-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.header-social-icon:focus,
+.header-social-icon:hover {
+  color: var(--text-three-color);
+}
+
+.hero-section {
+  text-align: center;
+  background: var(--text-four-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Блок-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-title {
+  width: 696px;
+  margin: 0 auto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-five-color);
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  display: block;
+  min-width: 200px;
+  margin-top: 30px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--text-eight-color);
+}
+
+.advantages-list {
+  display: flex;
+}
+
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantages-after-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-one-color);
+  margin-bottom: 10px;
+}
+
+.advantages-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-two-color);
+}
+
+.advantages-item {
+  width: calc((100% - 90px) / 4);
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: center;
+}
+
+.advantages-group {
+  height: 120px;
+  width: 270px;
+  background-color: var(--team-background-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.work-section {
+  padding-top: 0;
+}
+
+.work-list {
+  display: flex;
+  justify-content: center;
+}
+
+.work-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.work-item-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.work-img-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
+  color: var(--text-five-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  height: 70px;
+  width: 100%;
+}
+
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-one-color);
+  margin-bottom: 50px;
+}
+
+.team-section {
+  background: var(--team-background-color);
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-one-color);
+  margin-bottom: 50px;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-item {
+  background-color: var(--text-five-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-after-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-one-color);
+  margin-bottom: 10px;
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-two-color);
+  margin-bottom: 16px;
+}
+
+.team-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.team-social-item + .team-social-item {
+  margin-left: 10px;
+}
+
+.team-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--text-five-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--text-nine-color);
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-social-icon {
+  fill: currentColor;
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--text-three-color);
+  color: var(--text-five-color);
+}
+
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-one-color);
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  height: 92px;
+  width: 170px;
+  border: 1px solid var(--text-nine-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-nine-color);
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--text-three-color);
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--text-three-color);
+}
+
+.clients-icon {
+  fill: var(--text-nine-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/*# sourceMappingURL=main.css.map */
