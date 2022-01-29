@@ -26,9 +26,6 @@
   &:hover,
   &:focus {
     border-color: var(--text-three-color);
-  }
-  &:hover .clients-icon,
-  &:focus .clients-icon {
     fill: var(--text-three-color);
   }
 }
@@ -41,4 +38,8 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--text-three-color);
+  }
 }
