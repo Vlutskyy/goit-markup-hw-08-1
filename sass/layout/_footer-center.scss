@@ -23,12 +23,12 @@
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--text-three-color);
+    color: var(--text-five-color);
+  }
 }
 .footer-social-icon {
   fill: currentColor;
-}
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: var(--text-three-color);
-  color: var(--text-five-color);
 }

@@ -2,15 +2,7 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.clients-title {
-  // font-weight: 700;
-  // font-size: 36px;
-  // line-height: 1.16;
-  // text-align: center;
-  // letter-spacing: 0.03em;
-  // color: var(--text-one-color);
-  // margin-bottom: 50px;
-}
+
 .clients-list {
   display: flex;
   justify-content: center;
@@ -31,16 +23,16 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: var(--text-three-color);
+  }
+  &:hover .clients-icon,
+  &:focus .clients-icon {
+    fill: var(--text-three-color);
+  }
 }
 
-.clients-link:hover,
-.clients-link:focus {
-  border-color: var(--text-three-color);
-}
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-  fill: var(--text-three-color);
-}
 .clients-icon {
   fill: var(--text-nine-color);
   background-repeat: no-repeat;

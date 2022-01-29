@@ -21,10 +21,13 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-one-color);
-
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--text-three-color);
+  }
 }
 .header-item:not(:last-child) {
   margin-right: 50px;
@@ -61,10 +64,13 @@
   color: var(--text-two-color);
   display: flex;
   align-items: center;
-
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--text-three-color);
+  }
 }
 
 .header-contact {
@@ -74,19 +80,12 @@
 .header-contact-item:not(:last-child) {
   margin-right: 50px;
 }
-.header-link:hover,
-.header-link:focus,
-.header-contact-link:hover,
-.header-contact-link:focus {
-  color: var(--text-three-color);
-}
 
 .header-social-icon {
   margin-right: 10px;
   fill: currentColor;
-}
-
-.header-social-icon:focus,
-.header-social-icon:hover {
-  color: var(--text-three-color);
+  &:focus,
+  &:hover {
+    color: var(--text-three-color);
+  }
 }

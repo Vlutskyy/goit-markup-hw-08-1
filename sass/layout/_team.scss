@@ -5,15 +5,7 @@
   display: flex;
   justify-content: center;
 }
-.team-title {
-  // font-weight: 700;
-  // font-size: 36px;
-  // line-height: 1.16;
-  // text-align: center;
-  // letter-spacing: 0.03em;
-  // color: var(--text-one-color);
-  // margin-bottom: 50px;
-}
+
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -66,13 +58,12 @@
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--text-three-color);
+    color: var(--text-five-color);
+  }
 }
 .team-social-icon {
   fill: currentColor;
-}
-
-.team-social-link:hover,
-.team-social-link:focus {
-  background-color: var(--text-three-color);
-  color: var(--text-five-color);
 }

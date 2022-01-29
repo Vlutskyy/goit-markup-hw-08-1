@@ -33,6 +33,10 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--text-three-color);
+  }
 }
 .footer-contact-link {
   font-size: 14px;
@@ -42,17 +46,12 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: #d7e4f0;
+  }
 }
 
 .footer-list {
   font-style: normal;
-}
-
-.footer-link:hover,
-.footer-link:focus {
-  color: var(--text-three-color);
-}
-.footer-contact-link:hover,
-.footer-contact-link:focus {
-  color: #d7e4f0;
 }
