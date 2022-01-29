@@ -11,11 +11,11 @@
   --team-background-color: #f5f4fa;
 }
 
-/* body {
+body {
   font-family: 'Roboto', 'sans-serif';
-} */
+}
 
-/* p,
+p,
 h1,
 h2,
 h3,
@@ -37,9 +37,9 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-} */
+}
 
-/* .list {
+.list {
   list-style: none;
 }
 
@@ -63,11 +63,11 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-} */
-/* .section {
+}
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
-} */
+}
 
 .btn {
   align-items: center;
@@ -182,8 +182,10 @@ img {
 .header-social-icon:focus,
 .header-social-icon:hover {
   color: var(--text-three-color);
-}
+} */
+
 /* ===========Герой============== */
+
 /* .hero-section {
   text-align: center;
   background: var(--text-four-color);
@@ -464,7 +466,7 @@ img {
 } */
 
 /* ----------ПОДВАЛ ГЛАВНОЙ СТРАНИЦЫ---------- */
-.footer {
+/* .footer {
   background: var(--text-four-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -472,9 +474,9 @@ img {
 .footer-container {
   display: flex;
   align-items: baseline;
-}
+} */
 /* ============ footer-left ============== */
-.footer-left {
+/* .footer-left {
   flex-grow: 1;
   margin-right: 70px;
 }
@@ -531,10 +533,10 @@ img {
 .footer-contact-link:hover,
 .footer-contact-link:focus {
   color: #d7e4f0;
-}
+} */
 
 /* ==========footer-center=========== */
-.footer-center {
+/* .footer-center {
   margin-right: 93px;
 }
 .footer-title {
@@ -572,9 +574,9 @@ img {
 .footer-social-link:focus {
   background-color: var(--text-three-color);
   color: var(--text-five-color);
-}
+} */
 /* ==================== footer-right ================*/
-.footer-right-wrap {
+/* .footer-right-wrap {
   display: flex;
 }
 
@@ -611,12 +613,12 @@ img {
   right: 20px;
   fill: var(--text-five-color);
   margin-left: 10px;
-}
+} */
 /* =======ПОРТФОЛИО=========== */
 
 /* =========ПРОЕКТЫ========== */
 
-.filter {
+/* .filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
@@ -650,11 +652,11 @@ img {
   color: var(--text-five-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+} */
 
 /* ==============Галерея проектов================ */
 
-.galery-after-title {
+/* .galery-after-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -731,11 +733,11 @@ img {
   display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+} */
 
 /* ==============Модальное окно=============== */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   width: 100vw;
@@ -745,9 +747,9 @@ img {
 }
 .backdrop.is-hidden .modal {
   transform: scale(0.5);
-}
+} */
 
-.modal {
+/* .modal {
   padding: 40px;
   width: 528px;
   min-height: 581px;
@@ -916,4 +918,4 @@ img {
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--text-eight-color);
-}
+} */

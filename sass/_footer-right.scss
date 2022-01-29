@@ -1,0 +1,38 @@
+.footer-right-wrap {
+  display: flex;
+}
+
+.footer-mail-input {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  min-width: 358px;
+  background: var(--text-four-color);
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 16px;
+  margin-right: 12px;
+  outline: none;
+}
+
+.footer-btn {
+  display: flex;
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: var(--text-eight-color);
+}
+
+.footer-send-icon {
+  right: 20px;
+  fill: var(--text-five-color);
+  margin-left: 10px;
+}
