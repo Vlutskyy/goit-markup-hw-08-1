@@ -412,7 +412,7 @@ body {
   color: var(--text-three-color);
 }
 
-.hero-section {
+.hero {
   text-align: center;
   background: var(--text-four-color);
   padding-top: 200px;
@@ -426,7 +426,7 @@ body {
   margin-right: auto;
 }
 
-.hero-container__title {
+.hero__title {
   width: 696px;
   margin: 0 auto;
   font-weight: 900;
@@ -439,7 +439,7 @@ body {
   margin-bottom: 30px;
 }
 
-.hero-container__btn {
+.hero__btn {
   display: block;
   min-width: 200px;
   margin-top: 30px;
@@ -485,7 +485,7 @@ body {
   margin-bottom: 30px;
 }
 
-.work-section {
+.work__section {
   padding-top: 0;
 }
 
@@ -498,7 +498,7 @@ body {
   margin-right: 30px;
 }
 
-.work-list__item-wrap {
+.work-list__wrap {
   overflow: hidden;
   position: relative;
 }
@@ -530,17 +530,17 @@ body {
   justify-content: center;
 }
 
-.team-item:not(:last-child) {
+.team-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.team-item {
+.team-list__item {
   background-color: var(--text-five-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-after-title {
+.team-list__after-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -550,7 +550,7 @@ body {
   margin-bottom: 10px;
 }
 
-.team-text {
+.team-list__text {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -559,22 +559,22 @@ body {
   margin-bottom: 16px;
 }
 
-.team-content {
+.team-list__content {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-social-list {
+.team-list__social-list {
   list-style: none;
   display: flex;
   justify-content: center;
 }
 
-.team-social-item + .team-social-item {
+.socials__item + .socials__item {
   margin-left: 10px;
 }
 
-.team-social-link {
+.socials__link {
   width: 44px;
   height: 44px;
   background-color: var(--text-five-color);
@@ -588,12 +588,12 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-social-link:hover, .team-social-link:focus {
+.socials__link:hover, .socials__link:focus {
   background-color: var(--text-three-color);
   color: var(--text-five-color);
 }
 
-.team-social-icon {
+.socials__icon {
   fill: currentColor;
 }
 
