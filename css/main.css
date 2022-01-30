@@ -152,7 +152,7 @@ body {
   background: var(--text-five-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   position: absolute;
@@ -273,7 +273,7 @@ body {
   line-height: 1.71px;
   letter-spacing: 0.03em;
   color: var(--text-two-color);
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
 }
@@ -352,10 +352,10 @@ body {
 }
 
 .header-container {
-  align-items: center;
   padding-top: 24px;
   padding-bottom: 25px;
   display: flex;
+  align-items: center;
 }
 
 .current {
@@ -477,8 +477,8 @@ body {
   background-color: var(--team-background-color);
   border-radius: 4px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -576,8 +576,8 @@ body {
   height: 44px;
   background-color: var(--text-five-color);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   border-radius: 50%;
   color: var(--text-nine-color);
   transition-property: background-color, color;
@@ -615,8 +615,8 @@ body {
   box-sizing: border-box;
   border-radius: 4px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   color: var(--text-nine-color);
   transition-property: border-color;
   transition-duration: 250ms;
@@ -650,7 +650,7 @@ body {
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 .footer-left {
@@ -737,8 +737,8 @@ body {
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   border-radius: 50%;
   color: var(--text-five-color);
   transition-property: background-color, color;

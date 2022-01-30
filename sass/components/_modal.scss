@@ -20,7 +20,7 @@
   background: var(--text-five-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   position: absolute;
@@ -132,7 +132,7 @@
   line-height: 1.71px;
   letter-spacing: 0.03em;
   color: var(--text-two-color);
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   &::before {

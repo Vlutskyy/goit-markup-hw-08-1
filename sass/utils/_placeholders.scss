@@ -1,0 +1,13 @@
+@mixin align-flex-list {
+  display: flex;
+  align-items: center;
+}
+@mixin align-flex-just-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex-just-list {
+  display: flex;
+  justify-content: center;
+}
