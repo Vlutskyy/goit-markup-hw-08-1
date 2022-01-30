@@ -7,10 +7,10 @@
   display: flex;
   justify-content: center;
 }
-.clients-item:not(:last-child) {
+.clients-list__item:not(:last-child) {
   margin-right: 30px;
 }
-.clients-link {
+.clients-list__link {
   height: 92px;
   width: 170px;
   border: 1px solid var(--text-nine-color);
@@ -30,7 +30,7 @@
   }
 }
 
-.clients-icon {
+.clients-list__icon {
   fill: var(--text-nine-color);
   background-repeat: no-repeat;
   background-position: center;
