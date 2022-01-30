@@ -2,17 +2,17 @@
   display: flex;
 }
 
-.advantages-after-title {
+.advantages-list__after-title {
   color: var(--text-one-color);
   margin-bottom: 10px;
 }
-.advantages-text {
+.advantages-list__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-two-color);
 }
-.advantages-item {
+.advantages-list__item {
   width: calc((100% - 90px) / 4);
   &:not(:last-child) {
     margin-right: 30px;
