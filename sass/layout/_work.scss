@@ -7,16 +7,16 @@
   justify-content: center;
 }
 
-.work-item:not(:last-child) {
+.work-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.work-item-wrap {
+.work-list__item-wrap {
   overflow: hidden;
   position: relative;
 }
 
-.work-img-text {
+.work-list__img-text {
   display: flex;
   align-items: center;
   justify-content: center;
