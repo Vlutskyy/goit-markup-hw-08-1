@@ -1,9 +1,7 @@
 .advantages-list {
   display: flex;
 }
-.advantages-item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .advantages-after-title {
   color: var(--text-one-color);
   margin-bottom: 10px;
@@ -16,6 +14,9 @@
 }
 .advantages-item {
   width: calc((100% - 90px) / 4);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .advantages-list {
   display: flex;
