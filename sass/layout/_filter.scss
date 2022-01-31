@@ -1,9 +1,9 @@
-.filter {
+.filters {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-.filter-btn {
+.filters__btn {
   cursor: pointer;
   position: relative;
   font-weight: 500;
@@ -30,6 +30,6 @@
   }
 }
 
-.filter-item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }

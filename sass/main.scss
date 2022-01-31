@@ -1,3 +1,5 @@
+// utils + base
+
 @import './utils/variables';
 @import './base/reset';
 @import './utils/placeholders';
@@ -15,6 +17,10 @@
 @import './components/backdrop';
 @import './components/modal';
 @import './components/socials';
+@import './components/forms';
+@import './components/check';
+
+// layout
 
 @import './layout/header';
 @import './layout/hero';
