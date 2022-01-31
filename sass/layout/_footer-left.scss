@@ -1,8 +1,8 @@
-.footer-left {
+.footer-contacts {
   flex-grow: 1;
   margin-right: 70px;
 }
-.footer-logo {
+.footer__logo {
   font-family: 'Raleway', 'sans-serif';
   font-weight: 700;
   font-size: 26px;
@@ -14,16 +14,16 @@
   margin-right: 0;
 }
 
-.logo-white {
+.footer__logo-white {
   color: var(--text-five-color);
 }
 .color-text {
   color: var(--text-five-color);
 }
-.footer-item:not(:last-child) {
+.footer-list__item:not(:last-child) {
   margin-bottom: 9px;
 }
-.footer-link {
+.footer-list__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -37,7 +37,7 @@
     color: var(--text-three-color);
   }
 }
-.footer-contact-link {
+.footer-list__contact-link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

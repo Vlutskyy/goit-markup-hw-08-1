@@ -1,0 +1,22 @@
+.socials__list {
+  display: flex;
+}
+.socials__item + .socials__item {
+  margin-left: 10px;
+}
+.socials__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--text-three-color);
+    color: var(--text-five-color);
+  }
+}

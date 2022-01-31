@@ -1,8 +1,8 @@
-.footer-right-wrap {
+.footer-subscription__wrap {
   display: flex;
 }
 
-.footer-mail-input {
+.footer-subscription__mail-input {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -22,11 +22,11 @@
   outline: none;
 }
 
-.footer-btn {
+.footer-subscription__btn {
   display: flex;
 }
 
-.footer-send-icon {
+.footer-subscription__send-icon {
   right: 20px;
   fill: var(--text-five-color);
   margin-left: 10px;

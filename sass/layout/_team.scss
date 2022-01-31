@@ -5,7 +5,15 @@
   display: flex;
   justify-content: center;
 }
-
+.team-section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-one-color);
+  margin-bottom: 50px;
+}
 .team-list__item:not(:last-child) {
   margin-right: 30px;
 }
@@ -42,28 +50,20 @@
   display: flex;
   justify-content: center;
 }
-.socials__item + .socials__item {
+.team-list__item + .team-list__item {
   margin-left: 10px;
 }
 
-.socials__link {
-  width: 44px;
-  height: 44px;
+.team-link {
   background-color: var(--text-five-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
   color: var(--text-nine-color);
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    background-color: var(--text-three-color);
-    color: var(--text-five-color);
-  }
 }
 .socials__icon {
   fill: currentColor;
+}
+
+.socials__link:hover,
+.socials__link:focus {
+  background-color: var(--text-three-color);
+  color: var(--text-five-color);
 }
