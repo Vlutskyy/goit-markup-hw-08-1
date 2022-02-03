@@ -25,6 +25,10 @@
   position: absolute;
   top: 8px;
   right: 8px;
+  &:hover .modal__icon,
+  &:focus .modal__icon {
+    fill: var(--text-three-color);
+  }
 }
 .modal__icon {
   fill: var(--text-six-color);
@@ -35,12 +39,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__close {
-  &:hover .modal__icon,
-  &:focus .modal__icon {
-    fill: var(--text-three-color);
-  }
-}
+
 .modal__title {
   font-weight: 700;
   font-size: 20px;

@@ -13,7 +13,7 @@
 .header__logo {
   margin-right: 93px;
 }
-.logo-dark {
+.logo__dark {
   color: var(--text-six-color);
 }
 
@@ -44,7 +44,7 @@
   display: flex;
   align-items: center;
 }
-.current {
+.site-list__link__current {
   color: var(--text-three-color);
   position: relative;
   &::after {

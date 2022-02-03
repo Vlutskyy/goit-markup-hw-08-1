@@ -1,5 +1,7 @@
-.socials__list {
+.socials {
   display: flex;
+  justify-content: center;
+  list-style: none;
 }
 .socials__item + .socials__item {
   margin-left: 10px;

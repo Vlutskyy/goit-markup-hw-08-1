@@ -28,27 +28,27 @@
     <header class="header">
       <!-- Menu Nav -->
       <div class="container header__container">
-        <a class="logo header__logo link" href="" lang="en"
-          >Web<span class="logo-dark">Studio</span></a
-        >
+        <a class="logo header__logo" href="" lang="en">Web<span class="logo__dark">Studio</span></a>
 
         <nav class="site-nav">
           <ul class="list site-list">
             <li class="site-list__item">
-              <a class="link site-list__link" href="./index.html">Студия</a>
+              <a class="site-list__link" href="./index.html">Студия</a>
             </li>
 
             <li class="site-list__item">
-              <a class="link site-list__link current" href="./portfolio.html">Портфолио</a>
+              <a class="site-list__link site-list__link__current" href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
 
-            <li class="site-list__item"><a class="link site-list__link" href="">Контакты</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="">Контакты</a></li>
           </ul>
         </nav>
 
         <ul class="list contact">
           <li class="contact__item">
-            <a class="link contact__link" href="mailto:info@devstudio.com"
+            <a class="contact__link" href="mailto:info@devstudio.com"
               ><svg class="contact__icon" width="16" height="12">
                 <use href="img/icons.svg#icon-envelope"></use>
               </svg>
@@ -57,7 +57,7 @@
           </li>
 
           <li class="contact__item">
-            <a class="link contact__link" href="tel:+380961111111"
+            <a class="contact__link" href="tel:+380961111111"
               ><svg class="contact__icon" width="10" height="16">
                 <use href="img/icons.svg#icon-smartphone"></use>
               </svg>
@@ -70,11 +70,11 @@
 
     <main>
       <!--Фильтры-->
-      <section class="section projects__section">
-        <div class="container projects__container">
+      <section class="section">
+        <div class="container">
           <h1 class="visually-hidden">Проекты</h1>
-          <ul class="list filters">
-            <li class="filter__item">
+          <ul class="filters">
+            <li class="filters__item">
               <button type="button" class="filters__btn">Все</button>
             </li>
             <li class="filter__item">
@@ -93,9 +93,9 @@
 
           <!--Проекты-->
 
-          <ul class="list galery">
+          <ul class="galery">
             <li class="galery__item">
-              <a class="link galery__link" href=""
+              <a class="galery__link" href=""
                 ><div class="galery__img-overley">
                   <img src="./img/технокряк.jpg" alt="технокряк" width="370" height="294" />
                   <p class="galery__img-text">
@@ -105,61 +105,61 @@
                   </p>
                 </div>
                 <div class="galery__content">
-                  <h2 class="galery__after-title">Технокряк</h2>
+                  <h2 class="galery__title">Технокряк</h2>
                   <p class="galery__text">Веб-сайт</p>
                 </div></a
               >
             </li>
             <li class="galery__item">
-              <a class="link galery__link" href=""
+              <a class="galery__link" href=""
                 ><div class="galery__img-overley">
                   <img src="./img/постер.jpg" alt="постер" width="370" height="294" />
                   <p class="galery__img-text">Постер New Orlean vs Golden Star</p>
                 </div>
                 <div class="galery__content">
-                  <h2 class="galery__after-title">Постер New Orlean vs Golden Star</h2>
+                  <h2 class="galery__title">Постер New Orlean vs Golden Star</h2>
                   <p class="galery__text">Дизайн</p>
                 </div></a
               >
             </li>
             <li class="galery__item">
-              <a class="link galery__link" href=""
+              <a class="galery__link" href=""
                 ><div class="galery__img-overley">
                   <img src="./img/ресторан.jpg" alt="ресторан" width="370" height="294" />
                   <p class="galery__img-text">Ресторан Seafood</p>
                 </div>
                 <div class="galery__content">
-                  <h2 class="galery__after-title">Ресторан Seafood</h2>
+                  <h2 class="galery__title">Ресторан Seafood</h2>
                   <p class="galery__text">Приложение</p>
                 </div></a
               >
             </li>
             <li class="galery__item">
-              <a class="link galery__link" href=""
+              <a class="galery__link" href=""
                 ><div class="galery__img-overley">
                   <img src="./img/Prime.jpg" alt="проект Prime" width="370" height="294" />
                   <p class="galery__img-text">Проект Prime</p>
                 </div>
                 <div class="galery__content">
-                  <h2 class="galery__after-title">Проект Prime</h2>
+                  <h2 class="galery__title">Проект Prime</h2>
                   <p class="galery__text">Маркетинг</p>
                 </div></a
               >
             </li>
             <li class="galery__item">
-              <a class="link galery__link" href=""
+              <a class="galery__link" href=""
                 ><div class="galery__img-overley">
                   <img src="./img/Boxes.jpg" alt="проект Boxes" width="370" height="294" />
                   <p class="galery__img-text">Проект Boxes</p>
                 </div>
                 <div class="galery__content">
-                  <h2 class="galery__after-title">Проект Boxes</h2>
+                  <h2 class="galery__title">Проект Boxes</h2>
                   <p class="galery__text">Приложение</p>
                 </div></a
               >
             </li>
             <li class="galery__item">
-              <a class="link galery__link" href=""
+              <a class="galery__link" href=""
                 ><div class="galery__img-overley">
                   <img
                     src="./img/Borders.jpg"
@@ -170,13 +170,13 @@
                   <p class="galery__img-text">Inspiration has no Borders</p>
                 </div>
                 <div class="galery__content">
-                  <h2 class="galery__after-title">Inspiration has no Borders</h2>
+                  <h2 class="galery__title">Inspiration has no Borders</h2>
                   <p class="galery__text">Веб-сайт</p>
                 </div></a
               >
             </li>
             <li class="galery__item">
-              <a class="link galery__link" href=""
+              <a class="galery__link" href=""
                 ><div class="galery__img-overley">
                   <img
                     src="./img/издание.jpg"
@@ -187,31 +187,31 @@
                   <p class="galery__img-text">Издание Limited Edition</p>
                 </div>
                 <div class="galery__content">
-                  <h2 class="galery__after-title">Издание Limited Edition</h2>
+                  <h2 class="galery__title">Издание Limited Edition</h2>
                   <p class="galery__text">Дизайн</p>
                 </div></a
               >
             </li>
             <li class="galery__item">
-              <a class="link galery__link" href=""
+              <a class="galery__link" href=""
                 ><div class="galery__img-overley">
                   <img src="./img/LAB.jpg" alt="проект lab" width="370" height="294" />
                   <p class="galery__img-text">Проект LAB</p>
                 </div>
                 <div class="galery__content">
-                  <h2 class="galery__after-title">Проект LAB</h2>
+                  <h2 class="galery__title">Проект LAB</h2>
                   <p class="galery__text">Маркетинг</p>
                 </div></a
               >
             </li>
             <li class="galery__item">
-              <a class="link galery__link" href=""
+              <a class="galery__link" href=""
                 ><div class="galery__img-overley">
                   <img src="./img/growing.jpg" alt="growing business" width="370" height="294" />
                   <p class="galery__img-text">Growing Business</p>
                 </div>
                 <div class="galery__content">
-                  <h2 class="galery__after-title">Growing Business</h2>
+                  <h2 class="galery__title">Growing Business</h2>
                   <p class="galery__text">Приложение</p>
                 </div></a
               >
@@ -224,15 +224,15 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer-contacts">
-          <a class="footer__logo logo link" href="" lang="en"
-            >Web<span class="footer__logo-white">Studio</span></a
+          <a class="footer__logo logo" href="" lang="en"
+            >Web<span class="logo__white">Studio</span></a
           >
 
           <address>
             <ul class="list footer-list">
               <li class="footer-list__item">
                 <a
-                  class="footer-list__link link"
+                  class="footer-list__link"
                   href="https://goo.gl/maps/FH5nTBwzBQNdqYjo7"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -240,14 +240,12 @@
                 >
               </li>
               <li class="footer-list__item">
-                <a class="footer-list__contact-link link" href="mailto:info@example.com"
+                <a class="footer-list__contact-link" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
               <li>
-                <a class="footer-list__contact-link link" href="tel:+380961111111"
-                  >+38 096 111 1111</a
-                >
+                <a class="footer-list__contact-link" href="tel:+380961111111">+38 096 111 1111</a>
               </li>
             </ul>
           </address>
