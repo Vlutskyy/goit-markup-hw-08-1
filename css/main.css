@@ -561,7 +561,21 @@ body {
 .advantages__title {
   color: var(--text-one-color);
   margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
   text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .advantages__title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages__title {
+    text-align: left;
+  }
 }
 
 .advantages__text {
@@ -573,13 +587,27 @@ body {
 
 .advantages__box {
   height: 120px;
-  width: 270px;
+  width: 450px;
   background-color: var(--team-background-color);
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 800px) {
+  .advantages__box {
+    height: 120px;
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages__box {
+    height: 120px;
+    width: 270px;
+  }
 }
 
 .work-list {

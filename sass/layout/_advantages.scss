@@ -30,7 +30,15 @@
 .advantages__title {
   color: var(--text-one-color);
   margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
   text-align: center;
+  @media screen and (min-width: 800px) {
+    text-align: left;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .advantages__text {
   font-size: 14px;
@@ -41,7 +49,16 @@
 
 .advantages__box {
   height: 120px;
-  width: 270px;
+  width: 450px;
+  @media screen and (min-width: 800px) {
+    height: 120px;
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 120px;
+    width: 270px;
+  }
+
   background-color: var(--team-background-color);
   border-radius: 4px;
   display: flex;
