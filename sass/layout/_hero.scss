@@ -23,10 +23,17 @@
 
 .hero__title {
   max-width: 360px;
+  @include desk {
+    max-width: 696px;
+  }
   margin: 0 auto;
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.61;
+  line-height: 1.62;
+  @include desk {
+    font-size: 44px;
+    line-height: 1.36;
+  }
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
