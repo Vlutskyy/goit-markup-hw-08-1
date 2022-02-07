@@ -3,10 +3,7 @@
   background: var(--text-four-color);
   padding-top: 118px;
   padding-bottom: 118px;
-  @include tab {
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
+
   @include desk {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -40,18 +37,7 @@
     }
   }
 }
-// .hero-title {
-//   width: 696px;
-//   margin: 0 auto;
-//   font-weight: 900;
-//   font-size: 44px;
-//   line-height: 1.36;
-//   text-align: center;
-//   letter-spacing: 0.06em;
-//   text-transform: uppercase;
-//   color: var(--text-five-color);
-//   margin-bottom: 30px;
-// }
+
 .hero__title {
   margin: 0 auto;
   font-weight: 900;
