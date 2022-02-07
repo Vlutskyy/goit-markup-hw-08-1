@@ -1,11 +1,11 @@
 .advantages {
   margin-bottom: -30px;
-  @media screen and (min-width: 800px) {
+  @include tab {
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desk {
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
@@ -18,11 +18,11 @@
   //   margin-right: 30px;
   // }
   margin-bottom: 30px;
-  @media screen and (min-width: 800px) {
+  @include tab {
     width: calc(100% / 2 - 30px);
     margin-right: 30px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desk {
     width: calc(100% / 4 - 30px);
     margin-right: 30px;
   }
@@ -33,10 +33,10 @@
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
-  @media screen and (min-width: 800px) {
+  @include tab {
     text-align: left;
   }
-  @media screen and (min-width: 1200px) {
+  @include desk {
     text-align: left;
   }
 }
@@ -50,11 +50,11 @@
 .advantages__box {
   height: 120px;
   width: 450px;
-  @media screen and (min-width: 800px) {
+  @include tab {
     height: 120px;
     width: 354px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desk {
     height: 120px;
     width: 270px;
   }
