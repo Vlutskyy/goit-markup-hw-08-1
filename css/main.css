@@ -1039,7 +1039,7 @@ body {
 
 @media screen and (min-width: 800px) {
   .galery__item {
-    width: calc(100% / 2 - 30px);
+    width: calc((100% - 90px) / 2);
     margin-left: 30px;
     margin-top: 30px;
   }
@@ -1047,7 +1047,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .galery__item {
-    width: calc(100% / 3 - 30px);
+    width: calc((100% - 90px) / 3);
     margin-left: 30px;
     margin-top: 30px;
   }
