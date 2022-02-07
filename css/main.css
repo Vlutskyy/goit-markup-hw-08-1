@@ -490,8 +490,8 @@ body {
 .hero {
   text-align: center;
   background: var(--text-four-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 1600px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Блок-bg.jpg);
   background-repeat: no-repeat;
@@ -503,15 +503,15 @@ body {
 
 @media screen and (min-width: 800px) {
   .hero {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
