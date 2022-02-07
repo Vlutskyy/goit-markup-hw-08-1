@@ -863,11 +863,6 @@ body {
   padding-bottom: 60px;
 }
 
-.footer__container {
-  display: flex;
-  align-items: center;
-}
-
 .footer-contacts {
   flex-grow: 1;
   margin-right: 70px;
