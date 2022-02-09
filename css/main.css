@@ -631,7 +631,7 @@ body {
 
 .advantages__box {
   height: 120px;
-  width: 100%;
+  max-width: 450px;
   background-color: var(--team-background-color);
   border-radius: 4px;
   display: flex;
@@ -815,7 +815,7 @@ body {
 
 .clients-list__link {
   height: 92px;
-  width: 100%;
+  max-width: 210px;
   border: 1px solid var(--text-nine-color);
   box-sizing: border-box;
   border-radius: 4px;

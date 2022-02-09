@@ -45,7 +45,7 @@
 
 .advantages__box {
   height: 120px;
-  width: 100%;
+  max-width: 450px;
   @include tab {
     height: 120px;
     width: 354px;
