@@ -3,9 +3,9 @@
   // @include tab {
   //   margin-right: 93px;
   // }
-  // @include desk {
-  //   margin-right: 93px;
-  // }
+  @include desk {
+    margin-right: 93px;
+  }
 }
 .footer__after-title {
   color: var(--text-five-color);
@@ -17,9 +17,9 @@
   // @include tab {
   //   display: flex;
   // }
-  // @include desk {
-  //   display: flex;
-  // }
+  @include desk {
+    display: flex;
+  }
 }
 .socials__item + .socials__item {
   margin-left: 10px;

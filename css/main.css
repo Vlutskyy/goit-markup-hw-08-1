@@ -865,16 +865,35 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 800px) {
+  .footer__container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .footer-contacts {
   margin-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
 }
 
+@media screen and (min-width: 800px) {
+  .footer-contacts {
+    flex-grow: 1;
+    margin-right: 165px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-contacts {
-    align-items: center;
-    justify-content: center;
     flex-grow: 1;
     margin-right: 70px;
   }
@@ -892,6 +911,13 @@ body {
   margin-right: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
 .logo__white {
   color: var(--text-five-color);
 }
@@ -902,6 +928,12 @@ body {
 
 .footer-list__item:not(:last-child) {
   margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-list__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-list__link {
@@ -942,6 +974,12 @@ body {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-socials {
+    margin-right: 93px;
+  }
+}
+
 .footer__after-title {
   color: var(--text-five-color);
   margin-bottom: 20px;
@@ -950,6 +988,12 @@ body {
 .socials__list {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .socials__list {
+    display: flex;
+  }
 }
 
 .socials__item + .socials__item {
@@ -965,7 +1009,21 @@ body {
   fill: currentColor;
 }
 
+@media screen and (min-width: 800px) {
+  .footer-subscription__wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-subscription__wrap {
+    display: flex;
+  }
+}
+
 .footer-subscription__mail-input {
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -980,8 +1038,21 @@ body {
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 16px;
-  margin-bottom: 20px;
   outline: none;
+}
+
+@media screen and (min-width: 800px) {
+  .footer-subscription__mail-input {
+    display: flex;
+    margin-right: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-subscription__mail-input {
+    display: flex;
+    margin-right: 12px;
+  }
 }
 
 .footer-subscription__btn {
@@ -990,8 +1061,8 @@ body {
 
 .footer-subscription__send-icon {
   right: 20px;
-  margin-left: 10px;
   fill: var(--text-five-color);
+  margin-left: 10px;
 }
 
 .filters {

@@ -1,25 +1,27 @@
 .footer-subscription__wrap {
-  // @include tab {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  // }
-  // @include desk {
-  //   display: flex;
-  // }
+  // display: flex;
+  @include tab {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include desk {
+    display: flex;
+  }
 }
 
 .footer-subscription__mail-input {
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  // @include tab {
-  //   display: flex;
-  //   margin-right: 12px;
-  // }
-  // @include desk {
-  //   display: flex;
-  //   margin-right: 12px;
-  // }
+  @include tab {
+    display: flex;
+    margin-right: 12px;
+  }
+  @include desk {
+    display: flex;
+    margin-right: 12px;
+  }
   align-items: center;
   justify-content: center;
   height: 50px;
@@ -31,7 +33,7 @@
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 16px;
-  margin-bottom: 20px;
+  // margin-right: 12px;
   outline: none;
 }
 
@@ -41,6 +43,6 @@
 
 .footer-subscription__send-icon {
   right: 20px;
-  margin-left: 10px;
   fill: var(--text-five-color);
+  margin-left: 10px;
 }
