@@ -5,12 +5,12 @@
 }
 .footer__container {
   text-align: center;
-  @include tab {
-    display: flex;
-    align-items: center;
-  }
-  @include desk {
-    display: flex;
-    align-items: center;
-  }
+  // @include tab {
+  //   display: flex;
+  //   align-items: center;
+  // }
+  // @include desk {
+  //   display: flex;
+  //   align-items: center;
+  // }
 }

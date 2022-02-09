@@ -1,25 +1,25 @@
 .footer-subscription__wrap {
-  @include tab {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  @include desk {
-    display: flex;
-  }
+  // @include tab {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  // }
+  // @include desk {
+  //   display: flex;
+  // }
 }
 
 .footer-subscription__mail-input {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  @include tab {
-    display: flex;
-    margin-right: 12px;
-  }
-  @include desk {
-    display: flex;
-    margin-right: 12px;
-  }
+  // @include tab {
+  //   display: flex;
+  //   margin-right: 12px;
+  // }
+  // @include desk {
+  //   display: flex;
+  //   margin-right: 12px;
+  // }
   align-items: center;
   justify-content: center;
   height: 50px;
@@ -36,22 +36,22 @@
 }
 
 .footer-subscription__btn {
-  @include tab {
-    display: flex;
-  }
-  @include desk {
-    display: flex;
-  }
+  // @include tab {
+  //   display: flex;
+  // }
+  // @include desk {
+  //   display: flex;
+  // }
 }
 
 .footer-subscription__send-icon {
   fill: var(--text-five-color);
-  @include tab {
-    right: 20px;
-    margin-left: 10px;
-  }
-  @include desk {
-    right: 20px;
-    margin-left: 10px;
-  }
+  // @include tab {
+  //   right: 20px;
+  //   margin-left: 10px;
+  // }
+  // @include desk {
+  //   right: 20px;
+  //   margin-left: 10px;
+  // }
 }

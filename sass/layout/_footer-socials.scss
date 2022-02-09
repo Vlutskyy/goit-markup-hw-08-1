@@ -1,11 +1,11 @@
 .footer-socials {
   margin-bottom: 60px;
-  @include tab {
-    margin-right: 93px;
-  }
-  @include desk {
-    margin-right: 93px;
-  }
+  // @include tab {
+  //   margin-right: 93px;
+  // }
+  // @include desk {
+  //   margin-right: 93px;
+  // }
 }
 .footer__after-title {
   color: var(--text-five-color);
@@ -14,12 +14,12 @@
 .socials__list {
   display: flex;
   justify-content: center;
-  @include tab {
-    display: flex;
-  }
-  @include desk {
-    display: flex;
-  }
+  // @include tab {
+  //   display: flex;
+  // }
+  // @include desk {
+  //   display: flex;
+  // }
 }
 .socials__item + .socials__item {
   margin-left: 10px;
