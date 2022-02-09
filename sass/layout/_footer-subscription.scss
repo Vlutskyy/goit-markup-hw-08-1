@@ -1,20 +1,18 @@
 .footer-subscription__wrap {
   @include tab {
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
   }
   @include desk {
     display: flex;
   }
 }
-
 .footer-subscription__mail-input {
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   @include tab {
-    display: flex;
-    margin-right: 12px;
+    min-width: 450px;
   }
   @include desk {
     margin-bottom: 0px;

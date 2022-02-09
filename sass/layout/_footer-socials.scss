@@ -1,8 +1,9 @@
 .footer-socials {
   margin-bottom: 60px;
-  // @include tab {
-  //   margin-right: 93px;
-  // }
+  @include tab {
+    // flex-wrap: wrap;
+    // margin-right: 89px;
+  }
   @include desk {
     margin-right: 93px;
   }
@@ -14,9 +15,10 @@
 .socials__list {
   display: flex;
   justify-content: center;
-  // @include tab {
-  //   display: flex;
-  // }
+  @include tab {
+    // // display: flex;
+    // justify-content: center;
+  }
   @include desk {
     display: flex;
   }

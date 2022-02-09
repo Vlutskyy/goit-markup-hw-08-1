@@ -2,12 +2,13 @@
   background: var(--text-four-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  @include tab {
+    display: flex;
+  }
 }
 .footer__container {
   text-align: center;
   @include tab {
-    // display: flex;
-    // align-items: center;
   }
   @include desk {
     display: flex;
