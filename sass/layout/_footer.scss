@@ -2,16 +2,15 @@
   background: var(--text-four-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  @include tab {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  @include desk {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 .footer__container {
-  // display: flex;
-  align-items: center;
+  text-align: center;
+  @include tab {
+    display: flex;
+    align-items: center;
+  }
+  @include desk {
+    display: flex;
+    align-items: center;
+  }
 }
