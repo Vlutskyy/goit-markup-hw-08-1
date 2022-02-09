@@ -866,8 +866,8 @@ body {
 }
 
 .footer-contacts {
-  flex-grow: 1;
-  margin-right: 70px;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
 .footer__logo {
@@ -928,6 +928,7 @@ body {
 }
 
 .footer-socials {
+  align-items: center;
   margin-right: 93px;
 }
 
