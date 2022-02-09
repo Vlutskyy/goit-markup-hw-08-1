@@ -6,10 +6,12 @@
   //   flex-grow: 1;
   //   margin-right: 70px;
   // }
-  // @include desk {
-  //   flex-grow: 1;
-  //   margin-right: 70px;
-  // }
+  @include desk {
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    margin-right: 70px;
+  }
 }
 .footer__logo {
   font-family: 'Raleway', 'sans-serif';
