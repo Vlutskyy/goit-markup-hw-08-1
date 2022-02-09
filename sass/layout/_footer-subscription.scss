@@ -1,7 +1,5 @@
 .footer-subscription__wrap {
-  // display: flex;
   @include tab {
-    display: flex;
     flex-wrap: wrap;
   }
   @include desk {
@@ -19,8 +17,10 @@
     margin-right: 12px;
   }
   @include desk {
+    margin-bottom: 0px;
     display: flex;
     margin-right: 12px;
+    min-width: 358px;
   }
   align-items: center;
   justify-content: center;

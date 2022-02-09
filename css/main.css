@@ -865,13 +865,6 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 800px) {
-  .footer__container {
-    display: flex;
-    align-items: center;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .footer__container {
     display: flex;
@@ -1011,7 +1004,6 @@ body {
 
 @media screen and (min-width: 800px) {
   .footer-subscription__wrap {
-    display: flex;
     flex-wrap: wrap;
   }
 }
@@ -1050,8 +1042,10 @@ body {
 
 @media screen and (min-width: 1200px) {
   .footer-subscription__mail-input {
+    margin-bottom: 0px;
     display: flex;
     margin-right: 12px;
+    min-width: 358px;
   }
 }
 
