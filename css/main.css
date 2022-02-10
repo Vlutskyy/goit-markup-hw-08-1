@@ -198,6 +198,31 @@ body {
   transition: transform 500ms;
 }
 
+@media screen and (min-width: 450px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
 .modal__close {
   width: 30px;
   height: 30px;
@@ -347,12 +372,19 @@ body {
 .check__text {
   cursor: pointer;
   font-size: 12px;
-  line-height: 1.17px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--text-two-color);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .check__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .check__text::before {
@@ -374,10 +406,17 @@ body {
 
 .check__agree-link {
   font-size: 12px;
-  line-height: 1.17px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--text-three-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .check__agree-link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .header {
@@ -415,10 +454,6 @@ body {
 
 .site-list__item:not(:last-child) {
   margin-right: 50px;
-}
-
-.site-list {
-  display: flex;
 }
 
 .header__container {

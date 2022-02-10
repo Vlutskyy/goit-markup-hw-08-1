@@ -1,9 +1,11 @@
 .check__text {
   cursor: pointer;
   font-size: 12px;
-  line-height: 1.17px;
-  // font-size: 14px;
-  // line-height: 1.71px;
+  line-height: 1.17;
+  @include desk {
+    font-size: 14px;
+    line-height: 1.71;
+  }
   letter-spacing: 0.03em;
   color: var(--text-two-color);
   display: flex;
@@ -29,9 +31,11 @@
 
 .check__agree-link {
   font-size: 12px;
-  line-height: 1.17px;
-  // font-size: 14px;
-  // line-height: 1.71;
+  line-height: 1.17;
+  @include desk {
+    font-size: 14px;
+    line-height: 1.71;
+  }
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--text-three-color);
