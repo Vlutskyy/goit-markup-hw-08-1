@@ -433,6 +433,10 @@ body {
   color: var(--text-three-color);
 }
 
+.header__logo {
+  margin-right: 93px;
+}
+
 .logo__dark {
   color: var(--text-six-color);
 }
@@ -454,6 +458,10 @@ body {
 
 .site-list__item:not(:last-child) {
   margin-right: 50px;
+}
+
+.site-list {
+  display: flex;
 }
 
 .header__container {
