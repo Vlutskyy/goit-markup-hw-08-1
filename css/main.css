@@ -271,16 +271,13 @@ body {
   color: var(--text-five-color);
 }
 
-.forms-field {
-  margin-bottom: 10px;
-}
-
 .form-field__comment {
   margin-bottom: 20px;
 }
 
 .form-field__wrap {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .form-field__icon {
@@ -356,6 +353,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .check__text::before {
