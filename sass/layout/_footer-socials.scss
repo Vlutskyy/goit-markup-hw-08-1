@@ -1,11 +1,12 @@
 .footer-socials {
   margin-bottom: 60px;
   @include tab {
-    // flex-wrap: wrap;
-    // margin-right: 89px;
+    margin-bottom: 102px;
+    margin-right: 89px;
   }
   @include desk {
     margin-right: 93px;
+    margin-bottom: 40px;
   }
 }
 .footer__after-title {
@@ -16,7 +17,7 @@
   display: flex;
   justify-content: center;
   @include tab {
-    // // display: flex;
+    display: flex;
     // justify-content: center;
   }
   @include desk {

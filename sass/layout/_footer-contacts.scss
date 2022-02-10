@@ -3,10 +3,12 @@
   margin-left: auto;
   margin-right: auto;
   @include tab {
-    // flex-grow: 1;
-    // margin-right: 165px;
+    margin-bottom: 0;
+    margin-left: 76px;
   }
   @include desk {
+    margin-left: auto;
+    margin-right: auto;
     flex-grow: 1;
     margin-right: 70px;
   }

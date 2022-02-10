@@ -1,9 +1,11 @@
 .footer-subscription__wrap {
   @include tab {
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   @include desk {
     display: flex;
+    margin-bottom: 18px;
   }
 }
 .footer-subscription__mail-input {
@@ -31,7 +33,6 @@
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 16px;
-  // margin-right: 12px;
   outline: none;
 }
 
