@@ -16,7 +16,6 @@
   }
 }
 .header__logo {
-  // margin-right: 93px;
   @include tab {
     margin-right: 88px;
   }
@@ -43,7 +42,6 @@
   }
 }
 .site-list__item:not(:last-child) {
-  // margin-right: 50px;
   @include tab {
     margin-right: 50px;
   }
@@ -93,8 +91,8 @@
 }
 .contact__link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--text-two-color);
   display: flex;
@@ -104,6 +102,8 @@
     align-items: center;
   }
   @include desk {
+    font-size: 14px;
+    line-height: 1.14;
     display: flex;
     align-items: center;
   }
@@ -124,6 +124,7 @@
   @include desk {
     margin-left: auto;
     display: flex;
+    align-items: center;
   }
 }
 .contact__item:not(:last-child) {
@@ -131,6 +132,7 @@
     margin-bottom: 10px;
   }
   @include desk {
+    margin-bottom: 0;
     margin-right: 50px;
   }
 }
