@@ -457,6 +457,22 @@ body {
   color: var(--text-six-color);
 }
 
+.site-nav {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .site-nav {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    display: block;
+  }
+}
+
 .site-list__link {
   font-weight: 500;
   font-size: 14px;
@@ -570,11 +586,12 @@ body {
 }
 
 .contact {
-  margin-left: auto;
+  display: none;
 }
 
 @media screen and (min-width: 800px) {
   .contact {
+    display: block;
     margin-left: auto;
     text-align: center;
   }
@@ -582,6 +599,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .contact {
+    display: block;
     margin-left: auto;
     display: flex;
     align-items: center;
@@ -608,6 +626,10 @@ body {
 
 .contact__icon:focus, .contact__icon:hover {
   color: var(--text-three-color);
+}
+
+.menu-open-btn {
+  margin-left: auto;
 }
 
 .hero {
