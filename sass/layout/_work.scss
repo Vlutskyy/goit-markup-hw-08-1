@@ -1,3 +1,9 @@
+.section__no-padding-top {
+  display: none;
+  @include desk {
+    display: block;
+  }
+}
 .work-list {
   display: flex;
   justify-content: center;
