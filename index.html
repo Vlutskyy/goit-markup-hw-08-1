@@ -5,26 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="favicon.svg" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/modern-normalize.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <title>Мобильное меню</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
-    />
+
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
@@ -52,8 +54,9 @@
         <ul class="contact">
           <li class="contact__item">
             <a class="contact__link" href="mailto:info@devstudio.com"
-              ><svg class="contact__icon" width="16" height="12">
-                <use href="img/icons.svg#icon-envelope"></use>
+              ><svg class="contact__icon contact__icon--wide" width="16" height="12">
+                <use class="contact__icon-desk" href="img/icons.svg#icon-envelope"></use>
+                <use class="contact__icon-tab" href="img/icons.svg#icon-envelope-tab"></use>
               </svg>
               info@devstudio.com</a
             >
@@ -61,17 +64,92 @@
 
           <li class="contact__item">
             <a class="contact__link" href="tel:+380961111111"
-              ><svg class="contact__icon" width="10" height="16">
-                <use href="img/icons.svg#icon-smartphone"></use>
+              ><svg class="contact__icon contact__icon--high" width="10" height="16">
+                <use class="contact__icon-desk" href="img/icons.svg#icon-smartphone"></use>
+                <use class="contact__icon-tab" href="img/icons.svg#icon-smartphone-tab"></use>
               </svg>
               +38 096 111 1111</a
             >
           </li>
         </ul>
+        <button
+          type="button"
+          class="page-header__menu-toggle menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Открытие мобильного меню"
+        >
+          <svg width="40" height="40">
+            <use href="img/icons.svg#menu-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main>
+      <!-- Mobile menu -->
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <div class="mobile-menu__container container">
+          <button
+            type="button"
+            class="mobile-menu__menu-toggle menu-toggle js-close-menu"
+            aria-label="Закрытие мобильного меню"
+          >
+            <svg class="" width="40" height="40">
+              <use href="img/icons.svg#close-mobile-menu"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu__menu menu">
+            <li class="menu__item">
+              <a class="menu__link menu__link--current" href="./index.html">Студия</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="./portfolio.html">Портфолио</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu__contacts contacts">
+            <li class="contacts__item">
+              <a class="contacts__link contacts__link--big" href="tel:+380961111111">
+                +38 096 111 11 11</a
+              >
+            </li>
+
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu__social-menu social-menu">
+            <li class="social-menu__item">
+              <a class="social-menu__link" href="#" target="_blank" rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+            <li class="social-menu__item">
+              <a class="social-menu__link" href="#" target="_blank" rel="noopener noreferrer"
+                >Twitter</a
+              >
+            </li>
+            <li class="social-menu__item">
+              <a class="social-menu__link" href="#" target="_blank" rel="noopener noreferrer"
+                >Facebook</a
+              >
+            </li>
+            <li class="social-menu__item">
+              <a class="social-menu__link" href="#" target="_blank" rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
       <section class="hero">
         <div class="container hero__container">
           <h1 class="hero__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
@@ -148,37 +226,55 @@
           <ul class="work-list">
             <li class="work-list__item">
               <div class="work-list__wrap">
-                <img
-                  srcset="./img/box1.jpg 1x, ./img/box1-2x.jpg 2x"
-                  src="./img/box1.jpg"
-                  alt="планшет"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./img/box1.jpg 1x, ./img/box1-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./img/box1.jpg 1x, ./img/box1-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="#" alt="планшет" width="370" height="294" />
+                </picture>
+
                 <p class="work-list__img-text">Десктопные приложения</p>
               </div>
             </li>
             <li class="work-list__item">
               <div class="work-list__wrap">
-                <img
-                  srcset="./img/box2.jpg 1x, ./img/box2-2x.jpg 2x"
-                  src="./img/box2.jpg"
-                  alt="смартфон"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./img/box2.jpg 1x, ./img/box2-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./img/box2.jpg 1x, ./img/box2-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="#" alt="смартфон" width="370" height="294" />
+                </picture>
+
                 <p class="work-list__img-text">Мобильные приложения</p>
               </div>
             </li>
             <li class="work-list__item">
               <div class="work-list__wrap">
-                <img
-                  srcset="./img/box3.jpg 1x, ./img/box3-2x.jpg 2x"
-                  src="./img/box3.jpg"
-                  alt="ручка в руке"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./img/box3.jpg 1x, ./img/box3-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./img/box3.jpg 1x, ./img/box3-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="#" alt="ручка в руке" width="370" height="294" />
+                </picture>
+
                 <p class="work-list__img-text">Дизайнерские решения</p>
               </div>
             </li>
@@ -195,43 +291,76 @@
             <li class="team-list__item">
               <picture
                 ><source
+                  srcset="./img/team-img1.jpg 1x, ./img/team-img1-2x.jpg 2x"
                   media="(min-width: 1200px)"
-                  srcset="./img/team-img1.jpg 1x, ./img/team-img1-2x.jpg 2x" />
+                  type="image/webp" />
                 <source
+                  srcset="./img/team-img1.jpg 1x, ./img/team-img1-2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="./img/team-img1-tab-1x.jpg 1x, ./img/team-img1-tab-2x.jpg 2x"
                   media="(min-width: 768px)"
-                  srcset="./img/team-img1-tab-1x.jpg 1x, ./img/team-img1-tab-2x.jpg 2x" />
+                  type="image/webp" />
                 <source
-                  media="(min-width: 320px)"
-                  srcset="./img/team-img1-tel-1x.jpg 1x, ./img/team-img1-tel-2x.jpg 2x" />
-                <img src="./img/team-img1.jpg" alt="Product Designer"
+                  srcset="./img/team-img1-tab-1x.jpg 1x, ./img/team-img1-tab-2x.jpg 2x"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="./img/team-img1-tel-1x.jpg 1x, ./img/team-img1-tel-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp" />
+                <source
+                  srcset="./img/team-img1-tel-1x.jpg 1x, ./img/team-img1-tel-2x.jpg 2x"
+                  media="(max-width: 767px)" />
+                <img src="#" alt="Product Designer"
               /></picture>
+
               <div class="team-list__content">
                 <h3 class="team-list__title">Игорь Демьяненко</h3>
-                <p class="team-list__text">Product Designer</p>
+                <p class="team-list__text" lang="en">Product Designer</p>
                 <ul class="socials">
                   <li class="socials__item">
-                    <a href="" class="socials__link team-link"
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="instagram"
+                      class="socials__link team-link"
                       ><svg class="socials__icon" width="20" height="20">
                         <use href="img/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link team-link"
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="twitter"
+                      class="socials__link team-link"
                       ><svg class="socials__icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link team-link"
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="facebook"
+                      class="socials__link team-link"
                       ><svg class="socials__icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link team-link"
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="linkedin"
+                      class="socials__link team-link"
                       ><svg class="socials__icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -244,44 +373,76 @@
             <li class="team-list__item">
               <picture
                 ><source
+                  srcset="./img/team-img2.jpg 1x, ./img/team-img2-2x.jpg 2x"
                   media="(min-width: 1200px)"
-                  srcset="./img/team-img2.jpg 1x, ./img/team-img2-2x.jpg 2x" />
+                  type="image/webp" />
                 <source
+                  srcset="./img/team-img2.jpg 1x, ./img/team-img2-2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="./img/team-img2-tab-1x.jpg 1x, ./img/team-img2-tab-2x.jpg 2x"
                   media="(min-width: 768px)"
-                  srcset="./img/team-img2-tab-1x.jpg 1x, ./img/team-img2-tab-2x.jpg 2x" />
+                  type="image/webp" />
                 <source
-                  media="(min-width: 320px)"
-                  srcset="./img/team-img2-tel-1x.jpg 1x, ./img/team-img2-tel-2x.jpg 2x" />
-                <img src="./img/team-img2.jpg" alt="Frontend Developer"
+                  srcset="./img/team-img2-tab-1x.jpg 1x, ./img/team-img2-tab-2x.jpg 2x"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="./img/team-img2-tel-1x.jpg 1x, ./img/team-img2-tel-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp" />
+                <source
+                  srcset="./img/team-img2-tel-1x.jpg 1x, ./img/team-img2-tel-2x.jpg 2x"
+                  media="(max-width: 767px)" />
+                <img src="#" alt="Frontend Developer"
               /></picture>
 
               <div class="team-list__content">
                 <h3 class="team-list__title">Ольга Репина</h3>
-                <p class="team-list__text">Frontend Developer</p>
+                <p class="team-list__text" lang="en">Frontend Developer</p>
                 <ul class="socials">
                   <li class="socials__item">
-                    <a href="" class="socials__link team-link"
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="instagram"
+                      class="socials__link team-link"
                       ><svg class="socials__icon" width="20" height="20">
                         <use href="img/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link team-link"
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="twitter"
+                      class="socials__link team-link"
                       ><svg class="socials__icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link team-link"
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="facebook"
+                      class="socials__link team-link"
                       ><svg class="socials__icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link team-link"
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="linkedin"
+                      class="socials__link team-link"
                       ><svg class="socials__icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -294,44 +455,76 @@
             <li class="team-list__item">
               <picture
                 ><source
+                  srcset="./img/team-img3.jpg 1x, ./img/team-img3-2x.jpg 2x"
                   media="(min-width: 1200px)"
-                  srcset="./img/team-img3.jpg 1x, ./img/team-img3-2x.jpg 2x" />
+                  type="image/webp" />
                 <source
+                  srcset="./img/team-img3.jpg 1x, ./img/team-img3-2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="./img/team-img3-tab-1x.jpg 1x, ./img/team-img3-tab-2x.jpg 2x"
                   media="(min-width: 768px)"
-                  srcset="./img/team-img3-tab-1x.jpg 1x, ./img/team-img3-tab-2x.jpg 2x" />
+                  type="image/webp" />
                 <source
-                  media="(min-width: 320px)"
-                  srcset="./img/team-img3-tel-1x.jpg 1x, ./img/team-img3-tel-2x.jpg 2x" />
-                <img src="./img/team-img3.jpg" alt="Marketing"
+                  srcset="./img/team-img3-tab-1x.jpg 1x, ./img/team-img3-tab-2x.jpg 2x"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="./img/team-img3-tel-1x.jpg 1x, ./img/team-img3-tel-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp" />
+                <source
+                  srcset="./img/team-img3-tel-1x.jpg 1x, ./img/team-img3-tel-2x.jpg 2x"
+                  media="(max-width: 767px)" />
+                <img src="#" alt="Marketing"
               /></picture>
 
               <div class="team-list__content">
                 <h3 class="team-list__title">Николай Тарасов</h3>
-                <p class="team-list__text">Marketing</p>
+                <p class="team-list__text" lang="en">Marketing</p>
                 <ul class="socials">
                   <li class="socials__item">
-                    <a href="" class="socials__link team-link"
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="instagram"
+                      class="socials__link team-link"
                       ><svg class="socials__icon" width="20" height="20">
                         <use href="img/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link team-link"
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="twitter"
+                      class="socials__link team-link"
                       ><svg class="socials__icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link team-link"
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="facebook"
+                      class="socials__link team-link"
                       ><svg class="socials__icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link team-link"
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="linkedin"
+                      class="socials__link team-link"
                       ><svg class="socials__icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -344,44 +537,76 @@
             <li class="team-list__item">
               <picture
                 ><source
+                  srcset="./img/team-img4.jpg 1x, ./img/team-img4-2x.jpg 2x"
                   media="(min-width: 1200px)"
-                  srcset="./img/team-img4.jpg 1x, ./img/team-img4-2x.jpg 2x" />
+                  type="image/webp" />
                 <source
+                  srcset="./img/team-img4.jpg 1x, ./img/team-img4-2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="./img/team-img4-tab-1x.jpg 1x, ./img/team-img4-tab-2x.jpg 2x"
                   media="(min-width: 768px)"
-                  srcset="./img/team-img4-tab-1x.jpg 1x, ./img/team-img4-tab-2x.jpg 2x" />
+                  type="image/webp" />
                 <source
-                  media="(min-width: 320px)"
-                  srcset="./img/team-img4-tel-1x.jpg 1x, ./img/team-img4-tel-2x.jpg 2x" />
-                <img src="./img/team-img4.jpg" alt="UI Designer"
+                  srcset="./img/team-img4-tab-1x.jpg 1x, ./img/team-img4-tab-2x.jpg 2x"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="./img/team-img4-tel-1x.jpg 1x, ./img/team-img4-tel-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp" />
+                <source
+                  srcset="./img/team-img4-tel-1x.jpg 1x, ./img/team-img4-tel-2x.jpg 2x"
+                  media="(max-width: 767px)" />
+                <img src="#" alt="UI Designer"
               /></picture>
 
               <div class="team-list__content">
                 <h3 class="team-list__title">Михаил Ермаков</h3>
-                <p class="team-list__text">UI Designer</p>
+                <p class="team-list__text" lang="en">UI Designer</p>
                 <ul class="socials">
                   <li class="socials__item">
-                    <a href="" class="socials__link team-link"
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="instagram"
+                      class="socials__link team-link"
                       ><svg class="socials__icon" width="20" height="20">
                         <use href="img/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link team-link"
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="twitter"
+                      class="socials__link team-link"
                       ><svg class="socials__icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link team-link"
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="facebook"
+                      class="socials__link team-link"
                       ><svg class="socials__icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link team-link"
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="linkedin"
+                      class="socials__link team-link"
                       ><svg class="socials__icon" width="20" height="20">
                         <use href="./img/icons.svg#icon-linkedin"></use>
                       </svg>
