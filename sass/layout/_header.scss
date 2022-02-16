@@ -84,7 +84,7 @@
     align-items: center;
   }
 }
-.site-list__link__current {
+.site-list__link--current {
   color: var(--text-three-color);
   position: relative;
   &::after {
