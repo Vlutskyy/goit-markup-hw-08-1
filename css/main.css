@@ -1040,6 +1040,13 @@ body {
   }
 }
 
+.footer__developer-wrap {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
 .footer-contacts {
   margin-bottom: 60px;
   margin-left: auto;
