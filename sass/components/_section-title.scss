@@ -4,7 +4,7 @@
   text-align: center;
 }
 
-@include desk() {
+@include desktop() {
   .section-title {
     @include font(42px, 36px, null, null);
   }

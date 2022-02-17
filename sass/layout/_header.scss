@@ -1,161 +1,69 @@
-.header {
-  border-bottom: 1px solid var(--text-seven-color);
-  background: var(--text-five-color);
+.page-header {
+  width: 100%;
+  border-bottom: 1px solid #ececec;
+
+  background-color: var(--primary-bg-color);
 }
-.logo {
-  font-family: 'Raleway', 'sans-serif';
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: var(--text-three-color);
-  @include desk {
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+
+.page-header__container {
+  @include centrFlex(flex, center, space-between);
+}
+
+.page-header__logo {
+  padding-top: 16px;
+  padding-bottom: 15px;
+}
+
+@media screen and (min-height: 480px) {
+  .page-header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
   }
 }
-.header__logo {
-  @include tab {
+
+@media screen and (max-width: 767px) {
+  .page-header__menu {
+    display: none;
+  }
+
+  .page-header__contacts {
+    display: none;
+  }
+}
+
+@include tablet() {
+  .page-header__container {
+    @include centrFlex(null, null, flex-start);
+  }
+
+  .main-nav {
+    @include centrFlex(flex, center, flex-start);
+  }
+
+  .page-header__logo {
+    padding-top: 26px;
+    padding-bottom: 25px;
     margin-right: 88px;
   }
-  @include desk {
+
+  .page-header__contacts {
+    margin-left: auto;
+  }
+
+  .page-header__menu-toggle {
+    display: none;
+  }
+}
+
+@include desktop() {
+  .page-header__logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
     margin-right: 93px;
   }
-}
-.logo__dark {
-  color: var(--text-six-color);
-}
 
-.site-nav {
-  display: none;
-  @include tab {
-    display: block;
+  .page-header__contacts {
+    @include centrFlex(flex, center, flex-start);
   }
-  @include desk {
-    display: block;
-  }
-}
-.site-list__link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--text-one-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: var(--text-three-color);
-  }
-}
-.site-list__item:not(:last-child) {
-  @include tab {
-    margin-right: 50px;
-  }
-  @include desk {
-    margin-right: 50px;
-  }
-}
-
-.site-list {
-  @include tab {
-    display: flex;
-  }
-  @include desk {
-    display: flex;
-  }
-}
-.header__container {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  align-items: center;
-  @include tab {
-    padding-top: 21px;
-    padding-bottom: 21px;
-    display: flex;
-    align-items: center;
-  }
-  @include desk {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    display: flex;
-    align-items: center;
-  }
-}
-.site-list__link--current {
-  color: var(--text-three-color);
-  position: relative;
-  &::after {
-    content: '';
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    position: absolute;
-    background-color: var(--text-three-color);
-    left: 0;
-    bottom: -34px;
-  }
-}
-.contact__link {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: var(--text-two-color);
-  display: flex;
-  align-items: center;
-  @include tab {
-    display: flex;
-    align-items: center;
-  }
-  @include desk {
-    font-size: 14px;
-    line-height: 1.14;
-    display: flex;
-    align-items: center;
-  }
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: var(--text-three-color);
-  }
-}
-.contact {
-  display: none;
-  @include tab {
-    display: block;
-    margin-left: auto;
-    text-align: center;
-  }
-  @include desk {
-    display: block;
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-  }
-}
-.contact__item:not(:last-child) {
-  @include tab {
-    margin-bottom: 10px;
-  }
-  @include desk {
-    margin-bottom: 0;
-    margin-right: 50px;
-  }
-}
-
-.contact__icon {
-  margin-right: 10px;
-  fill: currentColor;
-  &:focus,
-  &:hover {
-    color: var(--text-three-color);
-  }
-}
-.menu-open-btn {
-  margin-left: auto;
 }

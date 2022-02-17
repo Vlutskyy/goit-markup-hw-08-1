@@ -1,66 +1,51 @@
-.clients-list {
-  margin: -15px;
+.clients__list {
   display: flex;
   flex-wrap: wrap;
-  @include tab {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  @include desk {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-  }
+  margin: -15px;
 }
-.clients-list__item {
+
+.clients__item {
   width: calc(100% / 2 - 30px);
   margin: 15px;
-
-  @include tab {
-    width: calc(100% / 3 - 30px);
-    margin: 15px;
-  }
-  @include desk {
-    width: calc(100% / 6 - 30px);
-    margin-right: 15px;
-  }
 }
-.clients-list__link {
+
+.clients__link {
+  @include centrFlex(flex, center, center);
+
   height: 92px;
-  max-width: 210px;
-  @include tab {
-    max-width: 226px;
-  }
-  @include desk {
-    width: 170px;
-  }
-  border: 1px solid var(--text-nine-color);
-  box-sizing: border-box;
+  border: 1px solid;
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-nine-color);
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: #afb1b8;
+  transition: color 250ms var(--cubic);
+
   &:hover,
   &:focus {
-    border-color: var(--text-three-color);
-    fill: var(--text-three-color);
+    color: var(--accent-color);
   }
 }
 
-.clients-list__icon {
-  fill: var(--text-nine-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    fill: var(--text-three-color);
+.clients__icon {
+  fill: currentColor;
+}
+
+@media screen and (max-width: 1199px) {
+  .clients__title {
+    margin-bottom: 30px;
+  }
+}
+
+@include tablet() {
+  .clients__item {
+    width: calc(100% / 3 - 30px);
+  }
+}
+
+@include desktop() {
+  .clients__item {
+    width: calc(100% / 6 - 30px);
+  }
+  .clients__title {
+    margin-bottom: 50px;
   }
 }

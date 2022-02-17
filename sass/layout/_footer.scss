@@ -1,27 +1,98 @@
-.footer {
-  background: var(--text-four-color);
+.page-footer {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 10px;
+  background-color: #2f303a;
 }
-.footer__container {
-  text-align: center;
-  @include tab {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-  }
-  @include desk {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: start;
-  }
+
+// /* Блок адреса и лого */
+
+.page-footer__address {
+  display: inline-block;
+  width: 232px;
 }
-.footer__developer-wrap {
+
+.page-footer__logo {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+// /* Блок соцсетей */
+
+.page-footer__social-label {
+  display: block;
+  margin-bottom: 20px;
+
+  color: #ffffff;
+  @include font($fw: 700);
+  text-transform: uppercase;
+}
+
+// /* Блок подписки на рассылку */
+
+.page-footer__distribution-title {
+  display: block;
+  margin-bottom: 20px;
+
+  color: #ffffff;
+  @include font($fw: 700);
+  text-transform: uppercase;
+}
+
+// /* Информация о разработчике */
+
+.page-footer__developer-wrap {
   margin-top: 20px;
   padding-top: 10px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .page-footer__social {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .page-footer__container {
+    text-align: center;
+  }
+
+  .page-footer__distribution {
+    margin-top: 60px;
+  }
+}
+
+@include tablet() {
+  .page-footer__container {
+    @include centrFlex(flex, baseline, center);
+    flex-wrap: wrap;
+  }
+
+  .page-footer__address {
+    margin-right: 165px;
+  }
+
+  .page-footer__social {
+    max-width: 220px;
+  }
+}
+
+@include desktop() {
+  .page-footer__container {
+    @include centrFlex(null, null, flex-start);
+  }
+  .page-footer__address {
+    width: 231px;
+    margin-right: 70px;
+  }
+
+  .page-footer__social-list {
+    justify-content: flex-start;
+  }
+
+  .page-footer__distribution {
+    margin-left: auto;
+  }
 }

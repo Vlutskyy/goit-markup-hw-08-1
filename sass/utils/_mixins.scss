@@ -54,21 +54,24 @@
 }
 
 // Медиа запрос
-@mixin tel {
+@mixin mobile() {
   @media screen and (min-width: 480px) {
     @content;
   }
 }
-@mixin tab {
-  @media screen and (min-width: 800px) {
+
+@mixin tablet() {
+  @media screen and (min-width: 768px) {
     @content;
   }
 }
-@mixin desk {
+
+@mixin desktop() {
   @media screen and (min-width: 1200px) {
     @content;
   }
 }
+
 @mixin xpix($dpr) {
   @media (min-device-pixel-ratio: $dpr),
     (min-resolution: ($dpr * 96dpi)),

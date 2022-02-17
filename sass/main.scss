@@ -1,36 +1,37 @@
-// utils + base
-
+// Utils
 @import './utils/variables';
-@import './base/reset';
-@import './utils/placeholders';
+@import './utils/visually-hidden';
 @import './utils/mixins';
+
+// Base
 @import './base/common';
-@import './utils/hidden';
+@import './base/container';
 
-//components
-
-@import './components/container';
-@import './components/after-title';
-@import './components/btn';
-@import './components/section';
+// Components
+@import './components/section-title';
+@import './components/logo';
+@import './components/menu';
+@import './components/mobile-menu';
+@import './components/contacts';
+@import './components/menu-toggle';
+@import './components/main-button';
+@import './components/card-team';
+@import './components/filter-btn';
+@import './components/gallery-card';
+@import './components/social';
+@import './components/address';
+@import './components/distribution-form';
+@import './components/developer';
 @import './components/backdrop';
 @import './components/modal';
-@import './components/socials';
-@import './components/forms';
-@import './components/check';
-@import './components/mobile-menu';
+@import './components/form';
 
-// layout
-
+// Layout
 @import './layout/header';
 @import './layout/hero';
-@import './layout/advantages';
-@import './layout/work';
+@import './layout/features';
+@import './layout/working';
 @import './layout/team';
 @import './layout/clients';
+@import './layout/portfolio';
 @import './layout/footer';
-@import './layout/footer-contacts';
-@import './layout/footer-socials';
-@import './layout/footer-subscription';
-@import './layout/filters';
-@import './layout/galery';
