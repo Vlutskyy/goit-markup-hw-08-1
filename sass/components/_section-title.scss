@@ -1,0 +1,11 @@
+.section-title {
+  color: var(--title-color);
+  @include font(33px, 28px, 700);
+  text-align: center;
+}
+
+@include desk() {
+  .section-title {
+    @include font(42px, 36px, null, null);
+  }
+}

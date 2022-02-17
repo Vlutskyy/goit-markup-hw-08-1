@@ -1,0 +1,52 @@
+.features__thumb {
+  @include centrFlex(flex, center, center);
+
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+
+  background-color: #f5f4fa;
+}
+
+.features__title {
+  margin-bottom: 10px;
+
+  color: var(--title-color);
+  @include font(16px, 14px, 700);
+  text-transform: uppercase;
+}
+
+.features__description {
+  @include font(24px, 14px);
+}
+
+@media screen and (max-width: 767px) {
+  .features__title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@include tablet() {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  .features__item {
+    width: calc(100% / 2 - 30px);
+    margin: 15px;
+  }
+}
+
+@include desktop() {
+  .features__item {
+    width: calc(100% / 4 - 30px);
+  }
+}

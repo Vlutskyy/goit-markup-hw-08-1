@@ -1,0 +1,15 @@
+.menu-toggle {
+  @include centrFlex(flex, center, center);
+  padding: 0;
+  border: none;
+
+  background-color: transparent;
+  fill: #212121;
+
+  transition: fill 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}

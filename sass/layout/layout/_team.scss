@@ -1,0 +1,31 @@
+.team {
+  background-color: var(--secondary-bg-color);
+}
+
+.team__title {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .team__card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@include tablet() {
+  .team__card-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  .team__card {
+    margin: 15px;
+  }
+}
+
+@include desktop() {
+  .team__title {
+    margin-bottom: 50px;
+  }
+}

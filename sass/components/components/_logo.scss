@@ -1,0 +1,17 @@
+.logo {
+  display: inline-block;
+
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  @include font(28px, 24px, 700);
+}
+
+.logo__accent-color {
+  color: var(--accent-color);
+}
+
+@include desktop() {
+  .logo {
+    @include font(31px, 26px, null, null);
+  }
+}

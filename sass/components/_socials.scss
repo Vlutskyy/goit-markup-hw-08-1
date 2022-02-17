@@ -22,3 +22,41 @@
     color: var(--text-five-color);
   }
 }
+.socials-list {
+  @include centrFlex(flex, center, center);
+  flex-wrap: wrap;
+  margin: -5px;
+}
+
+.socials-list__item {
+  margin: 5px;
+}
+
+.socials-list__link {
+  @include centrFlex(flex, center, center);
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: #ffffff;
+  }
+}
+
+.socials-list__link--theme--white {
+  color: #afb1b8;
+}
+
+.socials-list__link--theme--dark {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.socials-list__icon {
+  fill: currentColor;
+}
