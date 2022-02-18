@@ -1,5 +1,7 @@
 .contacts__link {
   display: block;
+  color: var(--primary-text-color);
+  @include font(28px, 24px, 500, 0.02em);
 
   transition: color 250ms var(--cubic);
 
@@ -7,11 +9,6 @@
   &:focus {
     color: var(--accent-color);
   }
-}
-
-.contacts__link {
-  color: var(--primary-text-color);
-  @include font(28px, 24px, 500, 0.02em);
 }
 
 .contacts__link--big {
