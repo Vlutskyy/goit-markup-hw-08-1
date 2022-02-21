@@ -287,19 +287,16 @@ img {
 
 .contacts__link {
   display: block;
-  transition: color 250ms var(--cubic);
-}
-
-.contacts__link:hover, .contacts__link:focus {
-  color: var(--accent-color);
-}
-
-.contacts__link {
   color: var(--primary-text-color);
   font-size: 24px;
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  transition: color 250ms var(--cubic);
+}
+
+.contacts__link:hover, .contacts__link:focus {
+  color: var(--accent-color);
 }
 
 .contacts__link--big {
