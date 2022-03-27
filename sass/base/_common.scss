@@ -17,15 +17,25 @@ img {
   height: auto;
 }
 
-.link {
-  text-decoration: none;
-}
-
-.list {
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
+a {
+  text-decoration: none;
+}
+
+// .link {
+//   text-decoration: none;
+// }
+
+// .list {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+// }
 
 .section {
   padding-top: 60px;
